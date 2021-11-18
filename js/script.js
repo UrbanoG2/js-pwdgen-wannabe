@@ -19,17 +19,31 @@ console.log(surname);
 let color = prompt ("Qual è il tuo colore preferito?");
 console.log(color);
 
-// anno attuale
+// chiediamo all'utente anche il suo numero preferito
 
-let year = "21"
+let favNumber = parseInt(prompt ("Qual è il tuo numero preferito?"));
+console.log(favNumber);
+
+// al numero preferito sommiamo 5 e lo mettiamo nella password
+
+let pswNumber = (favNumber+5);
+console.log(pswNumber);
+
+
 
 // scriviamo sulla pagina il risultato
 
-document.writeln (name+surname+color+year);
-console.log(name+surname+color+year);
+document.writeln (name+surname+color+pswNumber);
+console.log(name+surname+color+pswNumber);
 
 
 // scriviamo nel div di riferimento
 
-document.getElementById("random_id").innerHTML = name+surname+color+year;
-console.log(name+surname+color+year);
+document.getElementById("random_id").innerHTML = name+surname+color+pswNumber;
+console.log(name+surname+color+pswNumber);
+
+
+
+
+
+
